@@ -190,40 +190,23 @@ h4{
 /*-----------------------------------------------------------------------------*/
 /*GALÉRIA*/
 .row{
-    border: 2px solid rgb(48, 48, 64);
-    border-radius: 20px;
-    background-color: rgba(155, 188, 223, 0.473);
-    max-width: 800px;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
-.row2{
+.keret{
     border: 2px solid rgb(48, 48, 64);
     border-radius: 20px;
     background-color: rgba(155, 188, 223, 0.473);
     max-width: 800px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
 }
 .row img{
     width: 100%;
     opacity: 0.8; 
     cursor: pointer;
 }
-.row2 img{
-    width: 100%;
-    /*max-height: 120px;*/
-    opacity: 0.8; 
-    cursor: pointer;
-}
 .row img:hover {
-    opacity: 1;
-}
-.row2 img:hover {
     opacity: 1;
 }
 .row::after {
@@ -231,21 +214,6 @@ h4{
     clear: both;
     display: table;
 }
-.row2::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/*.column {
-    float: left;
-    padding-left: 60px;
-    padding-bottom: 15px;
-    width: calc(33.3333% - 120px);
-}
-.column2 {
-    float: left;
-    padding-left: 70px;
-    padding-bottom: 15px;*/
 .column{
     overflow: hidden;
     height: 220px;
@@ -287,7 +255,6 @@ footer{
     border-radius: 0px 0px 20px 20px;
     padding: 20px;
 }
-
 
 /*-----------------------------------------------------------------------------*/
 /*RESZPONZIVITÁS*/
