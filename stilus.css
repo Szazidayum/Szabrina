@@ -1,0 +1,320 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+
+/*ALAP INDEX*/
+body{
+    font-family: Cambria;
+}
+
+body{
+    background-image: url(kepek/hatter2.png);
+}
+main{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas:"head head head" 
+                        "nav art art"
+                        "foot foot foot";
+}
+p{
+    font-size: 20px;
+}
+h2{
+    font-size: 25px;
+}
+/*-----------------------------------------------------------------------------*/
+/*FEJLÉC*/
+header{
+    grid-area: head;
+    max-width: 1400px;
+    padding: 0px;
+    margin: auto;
+}
+header img{
+    width: 100%;
+    border-radius: 30px;
+}
+/*-----------------------------------------------------------------------------*/
+/*MENÜ*/
+nav{
+    grid-area: nav;
+    background-color: rgb(48, 48, 64);
+    border: 3px solid white;
+    border-radius: 20px 0px 0px 0px;
+}
+nav ul{
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+nav li{
+    list-style-type: none;
+    background-color: rgb(155, 188, 223);
+    border-radius: 15px;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(48, 48, 64);
+}
+.rolam{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 15%;
+    width: 100%;
+    height: auto;
+}
+li:hover{
+    background-color: white;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*TARTALOM*/
+article{
+    grid-area: art;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 0px 20px 0px 0px;
+}
+article p{
+    padding-right: 50px;
+}
+article img{
+    max-width: 200px;
+}
+.daruma{
+    width: 100%;
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.kakadu{
+    max-width: 200px;
+    display: block;
+    width: 100%;
+    float: right;
+    padding-left: 20px;
+}
+h4{
+    font-size: 20px;
+}
+.cim{
+    padding-top: 70px;
+}
+.altalanosp{
+    padding-bottom: 20px;
+}
+.filmes{
+    background-color:rgb(48, 48, 64);
+    border-radius: 20px;
+    color: white;
+    margin: auto;
+}
+.filmes video{
+    border: 3px solid rgba(255, 255, 255, 0.466);
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.filmes p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.filmes h4{
+    text-align: center;
+    padding-top: 30px;
+}
+/*-----------------------------------------------------------------------------*/
+/*MUNKÁIM*/
+.java{
+    width: 100%;
+    max-width: 120px;
+    border-radius: 20px;
+    height: auto;
+    display: block;
+    margin-top: 80px;
+    margin-right: 20px;
+    float: right;
+    border: 2px solid rgb(48, 48, 64);
+}
+.munka{
+    border: 2px solid rgb(48, 48, 64);
+    border-radius: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(155, 188, 223, 0.473);
+    max-width: 800px;
+    margin: auto;
+}
+.munka p{
+    color: black;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 200px;
+}
+.munka button{
+    background-color: rgb(48, 48, 64);
+    padding: 5px;
+}
+.munka button:hover{
+    background-color: rgba(48, 48, 64, 0.644);
+}
+.letoltes a{
+    color: white;
+}
+.munka a{
+    text-decoration: none;
+}
+.letoltes button{
+    color: white;
+}
+.web{
+    max-width: 250px;
+    margin-left: 50px;
+    border: 2px solid rgba(48, 48, 64, 0.438);
+    border-radius: 20px;
+}
+/*-----------------------------------------------------------------------------*/
+/*GALÉRIA*/
+.row{
+    border: 2px solid rgb(48, 48, 64);
+    border-radius: 20px;
+    background-color: rgba(155, 188, 223, 0.473);
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.row2{
+    border: 2px solid rgb(48, 48, 64);
+    border-radius: 20px;
+    background-color: rgba(155, 188, 223, 0.473);
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.row img{
+    width: 100%;
+    opacity: 0.8; 
+    cursor: pointer;
+}
+.row2 img{
+    width: 100%;
+    /*max-height: 120px;*/
+    opacity: 0.8; 
+    cursor: pointer;
+}
+.row img:hover {
+    opacity: 1;
+}
+.row2 img:hover {
+    opacity: 1;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*.column {
+    float: left;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    width: calc(33.3333% - 120px);
+}
+.column2 {
+    float: left;
+    padding-left: 70px;
+    padding-bottom: 15px;*/
+.column{
+    overflow: hidden;
+    height: 220px;
+}
+h3{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(48, 48, 64);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/*-----------------------------------------------------------------------------*/
+/*TÁBLÁZAT*/
+table{
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 17px;
+}
+td,th{
+    border: 1px solid black;
+    height: 50px;
+    padding-left: 20px;
+}
+th{
+    background-color: rgb(48, 48, 64);
+    color: white;
+}
+td:nth-child(even){
+    width: 500px;
+}
+td:nth-child(odd){
+    width: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*FOOTER*/
+footer{
+    grid-area: foot;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/*RESZPONZIVITÁS*/
+@media screen and (max-width:1000px){
+    .column {
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){ 
+    main{
+        
+        width: 100%;
+        
+        grid-template-columns: auto;
+        grid-template-areas: "head"
+                            "nav"
+                            "art"
+                            "foot";
+
+    }
+    nav{
+        border-radius: 20px 20px 20px 20px;
+    }
+    article{
+        border-radius:20px 20px 0px 0px;
+    }
+}
